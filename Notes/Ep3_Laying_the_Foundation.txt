@@ -1,0 +1,48 @@
+              Assignment 3 - Laying the Foundation
+
+Que:  What is JSX?
+Ans:  JSX is known as javascript XML. It is like HTML-like syntax which used for rendering JSX React element in the code. JSX is a feture in react. It has very easy syntax like HTML and we can also write javascript inside it. As we write code in JSX, Babel transpile it into react element.
+
+
+Que:  What is Superpowers of JSX?
+Ans:  JSX has many Superpowers :-
+      # Using JSX we can write hierarchical react element in an orgnized way which is similer to HTML.
+      # We don't have to use complex React.createElement code as it will transpile the code into React using Babel.
+      # We can use {} to pass some piece of javascript 
+      # We can also render react element inside react component by passing react element stored in variable inside {}.
+      # We can also render  other react component inside another react component which is called Component Composition.
+
+
+
+Que:  Role of type attribute in script tag? which option can I use there?
+Ans:  The type attribute in the <script> tag specifies the scripting language or media type of the embedded code within the script element. 
+
+        1.JavaScript (Default): If you don't specify the type attribute, it defaults to "text/javascript." This indicates that the content is JavaScript code.
+            <script>// JavaScript code here</script>
+
+        2.Module Script: You can use the "module" type to indicate that the content is an ES6 module, which allows you to use features like import and export.
+            <script type="module">// ES6 module code here</script>
+
+        3.JSON: You can use the "application/json" type to include JSON data within a script tag. This is useful for embedding configuration or data.
+            <script type="application/json"> {"key": "value"} </script>
+
+
+
+Que:  {TitleComponent} VS {<TitleComponent />} VS {<TitleComponent></TitleComponent>} in JSX ?
+Ans:  All of syntax above represent differnt ways of rendering a component.
+
+      # {TitleComponent}: This represents a value in the javascript. if any variable named as TitleComponent then it will render variable value in the page.
+
+      # {<TitleComponent />}: This will return a React component in the page. There is no children passed in the parameter.
+
+      # {<TitleComponent></TitleComponent>}: This is another way of rendering React component just like the self closing one. This way is used when we are supposed to provide some children in the Component as well.
+  
+
+
+
+
+
+
+
+
+

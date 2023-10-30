@@ -1,0 +1,23 @@
+{
+  "name": "ep7_finding_the_path",
+  "version": "1.0.0",
+  "description": "- createBrowserRouter:- configration to devlop path to diffrent elements.\r - RouterProvider :- Provide Routing configration",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Gaurav Trivedi",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
+  }
+}

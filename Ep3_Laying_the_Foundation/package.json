@@ -1,0 +1,21 @@
+{
+  "name": "ep3_laying_the_foundation",
+  "version": "1.0.0",
+  "description": "Namste React by Gaurav Trivedi",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Gaurav Trivedi",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

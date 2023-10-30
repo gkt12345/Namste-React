@@ -1,0 +1,204 @@
+Que:  What is ‘npm’ ?
+Ans:  Npm is a package manager through which we can manage various
+      dependencies in our app. It also supports version controlling of the added packages.
+
+
+Que. What is ‘Parcel/Webpack’? Why do we need it ?
+Ans. Parcel is a bundler which is used for bundling all the code. Parcel is used 
+     to make our application production ready by optimizing our files by doing
+     various operations such as code splitting, bundling, HMR (hot moduler replacement),
+     faster build, errorhandling etc. and making our app ready for deployment on production.
+
+
+Que:  What is ‘.parcel-cache’ ?
+Ans:  .parcel-cache is a file where parcel does caching while building the
+      project for production or for dev. It caches the files and details 
+      and checks if any file is changed. If it finds some changes in a file 
+      then it reloads the page but the build time is very less compared to 
+      the first time because of the cache. It is generated automatically.
+
+
+Que:  What is npx?
+Ans.  Npx is a command line tools which is used for executing packages which 
+      are installed in the system. It's often used to execute binaries from 
+      packages without the need to install them globally or clutter your 
+      project's dependencies.
+
+
+Que:  What is difference between ‘dependencies’ and ‘devDependencies’?
+Ans:  Dependency is an object that contains the library, which your project 
+      requires for production environments and functioning effectively. 
+      devDependencies are those packages in the package.json file that you 
+      need only for project development purposes. 
+      Example- Babel, Webpack, etc.
+
+
+
+Que:  What is Tree Shaking?
+Ans:  Tree shaking in Parcel refers to the process of analyzing and eliminating 
+      unused or dead code from your JavaScript bundles during the build 
+      process. The goal of tree shaking is to reduce the size of the final bundle 
+      by removing parts of the code that are never used, thus improving the 
+      overall performance and load times of your web application. Parcel, as 
+      a build tool, automatically performs tree shaking as part of its 
+      optimization process.
+
+
+
+Que: What is Hot Module Replacement?
+Ans: Hot Module Replacement (HMR) is a feature in development tools that 
+     allows you to update parts of your application in real-time without 
+     requiring a full page reload. It enables developers to make changes to 
+     their code and immediately see the effects reflected in the browser, 
+     speeding up the development process and improving productivity. HMR 
+     works by swapping out the updated modules in the running application 
+     while preserving the application's state.
+
+
+Que: List down fourite 5 superpowers of Parcel and describe any 3?
+Ans: superpowers of Parcel:-   
+     1. Tree Shaking
+     2. Code splitting
+     
+     3. Hosts website on local server
+          ->using the feature we can host website on our local server.
+     
+     4. Faster building using caches.
+        -> Because of caching build time very fast. it use previous chache for it.
+
+     5. Different bundling for support any browser.
+        -> it automatically support old browser by generating node module for older browser.    
+
+
+
+Que:  What is .gitignore? What should we add and not add into it ?
+Ans:  .gitignore is the file where we add those files and folder which are
+       not soposed to be pushed into the git repo. the files which can be
+       generated again from other file (such as node module, bist, .parcel-cache,  etc.)
+       are not require to push into git repo. the files not automatically regenrate
+       are not soposed to add into .gitignore file.
+
+
+
+
+Que: What is difference between ‘package.json’ and ‘package-lock.json’?
+Ans: Package.json: this file contains meta data about your projcet, including
+     the project name, version, dependencies, script, and other configration
+     setting. It's used to define the project's structure and dependencies 
+     but doesn't necessarily lock down exact versions.
+     
+     Package-lock.json: this file is genrated automatically when you install
+     or update dependencies using npm. It record the exact version of each 
+     depeendency that were installed.
+
+     In short, package.json outlines your project's configuration and 
+     dependencies, while package-lock.json specifies the exact versions of 
+     those dependencies for consistency.
+ 
+       
+
+Que: What is ‘node_modules’ ? Is it good idea to push that to git ?
+Ans: Node_module is a folder which contains all the dependencies and their 
+     code which are being used in our project. It act as a data base containing
+     source code and logic of each dependencies used in project.
+     It is not a good idea to push Node_module in git because it automatically
+     regenrate and it's code also get changed based on devDependencies.
+
+
+
+Que:  What is ‘dist’ folder ?
+Ans:  In a React application built with Parcel, the "dist" folder stands for 
+     "distribution" and contains the final output files after the build process. 
+     These files are optimized, bundled, and ready to be deployed to a web 
+     server. The "dist" folder typically includes minified and concatenated 
+     versions of your JavaScript, CSS, and other assets, making it suitable 
+     for hosting and serving your application in a production environment.
+
+
+
+Que: What is ‘browserslists’ ?
+Ans: BrowsersList is an attribute in package.json file in which we can configure
+     that which browser our app should support. 
+     like "last 2 versions", "last 2 chrome versions" etc.
+
+
+=======================================================================
+
+Que:  What is vite, webpack, parcel ?
+Ans:  Vite, webpack, and Parcel are all popular bundlers used in web 
+      development to package and optimize code for production. Each has 
+      its strengths:
+
+      Vite: Vite is a modern bundler that emphasizes fast development and 
+      build times. It leverages ES modules to provide near-instantaneous 
+      hot module replacement (HMR) and efficient caching during development.
+      Best suited for small to medium-sized projects where speed and developer 
+      experience are key. Great for building Vue.js applications and works well 
+      with other frameworks as well.
+
+      Webpack: Webpack is a powerful and versatile bundler used widely in 
+      the industry. Offers extensive customization and features through 
+      plugins and loaders. Suitable for projects of all sizes, from small 
+      to large, with complex requirements. Requires more configuration but 
+      provides fine-grained control over the build process.
+
+      Parcel: Parcel is an easy-to-use and zero-config bundler, ideal for 
+      quick setups. It handles many tasks automatically, like bundling, 
+      minification, and asset optimization. Best for simple projects or 
+      when you want a low barrier to entry. May have fewer customization 
+      options compared to Webpack.
+  
+      Which to Use: 
+        For Speed and Small Projects: If you prioritize speed and are 
+        working on small to medium-sized projects, Vite might be a good 
+        choice due to its fast development experience.
+        
+        For Flexibility: If you need extensive customization and have 
+        more complex requirements, Webpack offers high configurability.
+
+        For Simplicity: If you prefer simplicity and want to avoid extensive 
+        configuration, Parcel is straightforward and quick to set up.
+  
+==========================================================================
+
+
+
+Que:  Read About: ^ caret and ~ tilda?
+Ans:  In dependencies we use ^ caret and ~ tilda are used depeendency version.
+      ^ caret we used if any minor version updation released it automatically
+      update (eg. 2.5.1 to 3.5.2). for major version updation we use ~ tilda 
+      to update automatically (2.0.0 to 3.0.0). 
+
+
+Que:  Read About Script types in HTML ?
+Ans:  In HTML, the type attribute in the <script> tag specifies the content type 
+      of the script being included. Here are the commonly used type values:
+
+text/javascript: 
+        Specifies that the content is JavaScript code. This type is widely 
+        supported and used by default if the type attribute is omitted.
+
+module: 
+        Indicates that the script is a JavaScript module, allowing for modular 
+        code organization with features like import and export.
+
+application/json: 
+        Defines JSON data. Not commonly used for scripts but rather for 
+        embedding JSON data within the HTML document.
+
+text/html: 
+        Rarely used for scripts; typically used to embed HTML code as 
+        a script.
+
+
+text/css: 
+        Specifies that the content is CSS code. Rarely used in modern development 
+        due to the separation of CSS in separate files.
+
+text/plain: 
+        Specifies plain text, not treated as executable code.
+
+Remember that for JavaScript, the modern and recommended approach
+is to use the type="module" attribute for scripts that are organized as
+modules and the default type="text/javascript" for regular scripts.
+

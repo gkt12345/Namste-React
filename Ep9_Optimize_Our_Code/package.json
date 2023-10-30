@@ -1,0 +1,22 @@
+{
+  "name": "ep9_optimize_our_code",
+  "version": "1.0.0",
+  "description": "\"Optimize Our Code\"",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Gaurav Trivedi",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

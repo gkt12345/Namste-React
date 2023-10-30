@@ -1,0 +1,111 @@
+=>  What is Emmet?
+    It allows you to write HTML and CSS code using abbreviations and then expand
+    them into complete code snippets. This can greatly speed up the process of writing
+    repetitive code and reduce the chances of making errors.
+
+    It provides various shortcuts and abbreviations that help you generate complex
+    HTML and CSS structures quickly. For example, you can type an abbreviation like
+    div>ul>li*2 and then use the Emmet expansion feature to automatically generate
+    the following code:
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+=>  Difference between a Library and Framework?
+    Library provides specific functions or tools that developers can use
+    to solve particular problems or tasks, while a framework provides a more structured and
+    comprehensive environment that defines the overall architecture of an application and
+    guides developers in building it.
+
+
+=>  What is CDN? Why do we use it?
+    CDN stands for Content Delivery Network. The purpose of CDN is o deliver digital
+    content like web pages, images, scripts, etc. We have used CDN to inject React
+    into our application. Here, the React is hosted in CDN and we have CDN script link
+    using which we can directly used React in our app instead of adding React
+    dependency.
+
+
+=>  Why is React known as React?
+    React was named "React" because it reflects the library's core purpose: efficiently
+    reacting to changes in data and updating the user interface in response to those
+    changes.
+
+
+
+=>  What is cross-origin in the script tag?
+    The crossorigin attribute in the <script> tag is used to specify that a script can be
+    loaded from a different domain or origin while adhering to security measures. It
+    helps in controlled cross-origin loading of scripts, allowing web pages to fetch
+    external scripts for enhanced functionality without compromising security.
+
+
+
+=>  What is the Difference between React and ReactDOM?
+    React Represents the core library for building user interfaces and managing
+    component logic. It includes features for creating components, managing state,
+    handling props, and rendering virtual DOM elements. Whereas ReactDOM focus
+    specifically on integration of React with actual DOM. It provides methods for
+    rendering React components into Real DOM and updating them efficiently and
+    handling events.
+     In short, React is the main library for building components and managing
+    application logic, while ReactDOM is a separate package that deals with rendering
+    those React components into the browser's DOM and managing interactions with
+    the real DOM.
+
+
+
+=>  What is Difference between react.devlpment.js and react.production.js file via CDN?
+    react.development is intended for development environments and recet.production
+    is optimized for production environment. it's recommended to use the
+    react.production.js version to ensure better performance and a smaller bundle size.
+    During development, the react.development.js version is beneficial for debugging
+    and identifying issues in the code.
+
+
+
+
+=> What are async and defer? 
+    Async and differ are boolean attributes which are used along with script
+    tags to load the external scripts efficiently into our webpage.
+    When we load a webpage, there are two main things happening in our
+    browser. One is HTML parsing and the other is loading of the script.
+    The loading of script contains two parts
+        1. Fetching the script from network
+        2. Executing the script
+    
+        Example:
+        <script src= “ “ />
+
+        → When parsing HTML, when browser encounters the src in
+        script task, it stops parsing and get the script from network.
+        → When fetching and executing the script, the HTML parsing is
+        stopped.
+        1. <script async src= “” />
+        → While using async, the HTML parsing doesn’t stop and the
+        script from network is fetched asynchronously (the fetching is
+        done while HTML parsing is going on).
+        → Now when the fetching is done, the HTML parser stops till the
+        script is executed. Once the script is executed the HTML parsing
+        resumes.
+        <script defer src= “” />
+        → In case of defer, the HTML parsing goes on and while it
+        fetching the script. The execution of the script is only done
+        once the whole HTML parsing is completed.
+    
+    → The important thing is that the async attribute doesn’t guarantee
+    the order of the execution of the script. But defer does.
+    → In case of interdependent scripts, async shouldn’t be used.
+    → In case of external scripts like google analytics, etc., it is not advisable
+    to use async.
+    → defer is best to be used in most of the scenarios.
+
+
+
+
+
+
