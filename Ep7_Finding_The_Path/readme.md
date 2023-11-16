@@ -7,7 +7,7 @@
 - createBrowserRouter:- configration to devlop path to diffrent elements.
 - RouterProvider :- Provide Routing configration
 
-# Erliar we were render AppLayout directly now we provide it to RoterProvider to router configration.
+# Earliar we were render AppLayout directly now we provide it to RoterProvider to router configration.
 
     eg:- ``root.render(<RouterProvider router{appRouter}>);``
 
