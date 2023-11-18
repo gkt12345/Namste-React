@@ -21,7 +21,7 @@ const RestaurantMenu = () => {
     );
 
   return (
-    <div class="mx-10">
+    <div className="mx-10">
       <ResMenuInfo menuList={menuList?.cards[0]} />
 
       {category?.map((item, index) => (
