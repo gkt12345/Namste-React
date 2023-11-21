@@ -38,3 +38,53 @@
         - create a file with slice name
         - import {createSlice} from @reduxjs/toolkit
         - const nameSlice = createSlice({});
+
+-
+-
+-
+-
+-
+
+# Ep 13- Time for Test:
+
+# Types of Testing (Devloper)
+
+- Unit Testing :- testing some random component
+- Intregation Testing :-
+- End to End Testing - e2e testing :- Whole app from scratch
+
+-
+
+# --- Setting up Testing in our App
+
+- React (or Dom) testing library for Testing. and this library uses jest. and this jest uses `babel` inside it.
+  : That's why we need to install these dependency in our app:-
+
+  - `npm i -D @testing-library/react`
+  - `npm i -D jest`
+  - `npm i -D babel-jest @babel/core @babel/preset-env`
+
+  - Create a `babel.config.js` and configure it:
+  - module.exports = {
+    presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+    };
+
+  - Now our parcel app also uses babel and our `babel.config.js` overwrtie it to avoid it we need to disable parcel babel transpilation:
+  - create a `.parcelrc` file and configure it:-
+
+        ```javascript
+            -{
+                extends: "@parcel/config-default",
+                transformers: {
+                 "*.{js,mjs,jsx,cjs,ts,tsx}": [
+                   "@parcel/transformer-js",
+                    "@parcel/transformer-react-refresh-wrap",
+                  ],
+                },
+            };
+        ```
+
+- check here `npm run test` if no error found it is ok.
+
+- `Jest configration`:
+  - `npx jest --init`: inislize new file jest

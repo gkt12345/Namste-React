@@ -1,17 +1,24 @@
 import { useDispatch } from "react-redux";
 import { resCard_IMG_URL } from "../utils/pathOfAll";
-import { addItem } from "../store/cartSlice";
+import { addItem, removeItem } from "../store/cartSlice";
 import { useState } from "react";
 
 const ResMenuList = ({ item }) => {
   const [count, setCount] = useState(0);
+  const dispatch = useDispatch();
 
   const { name, price, defaultPrice, description, imageId } = item?.card?.info;
-  const dispatch = useDispatch();
+
   const handleClick = (item) => {
     // dispatch an action
     dispatch(addItem(item));
     setCount(count + 1);
+  };
+  const handleRemove = (item) => {
+    if (count >= 0) {
+      dispatch(removeItem(item));
+      setCount(count - 1);
+    }
   };
   return (
     <div className="flex justify-between border-b my-[20px] pb-[20px]">
@@ -35,13 +42,14 @@ const ResMenuList = ({ item }) => {
             ADD
           </button>
         ) : (
-          <button
-            className="w-[80%] absolute bottom-[-9px] ml-3 border bg-green-50 text-green-600 font-medium rounded-md h-8 text-sm hover:shadow-lg"
-            onClick={() => handleClick(item)}
-          >
-            <span className="font-medium">-</span>
+          <button className="w-[80%] absolute bottom-[-9px] ml-3 border bg-green-50 text-green-600 font-medium rounded-md h-8 text-sm hover:shadow-lg">
+            <span className="font-medium" onClick={() => handleRemove(item)}>
+              -
+            </span>
             <span className=" mx-6 font-medium">{count}</span>
-            <span className="font-medium">+</span>
+            <span className="font-medium" onClick={() => handleClick(item)}>
+              +
+            </span>
           </button>
         )}
       </div>
