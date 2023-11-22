@@ -87,4 +87,14 @@
 - check here `npm run test` if no error found it is ok.
 
 - `Jest configration`:
+
   - `npx jest --init`: inislize new file jest
+  - Question in terminal:-
+    - like to use typescript - NO
+    - Chose the envoironment - jsdom(browser-like)
+    - add coverage report - yes
+    - provide should use - babel
+    - clear mock calls - yes
+
+- `Install Jsdom library`:
+  - npm i -D jest-environment-jsdom
