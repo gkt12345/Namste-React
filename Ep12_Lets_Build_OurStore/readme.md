@@ -49,7 +49,7 @@
 
 # Types of Testing (Devloper)
 
-- Unit Testing :- testing some random component
+- Unit Testing :- testing a component
 - Intregation Testing :-
 - End to End Testing - e2e testing :- Whole app from scratch
 
@@ -96,5 +96,12 @@
     - provide should use - babel
     - clear mock calls - yes
 
-- `Install Jsdom library`:
-  - npm i -D jest-environment-jsdom
+- `Install Jsdom library`: npm i -D jest-environment-jsdom
+
+- `Install @babel/preset-react`: to make JSX work in test cases
+
+  - npm i -D @babel/preset-react
+  - include @babel/preset-react inside my babel configuration file: `["@babel/preset-react", {runtime: "automatic"}]`
+
+- `Install @testing-library/jest-dom`: to make `toBeTheDocument()` like many functions work.
+  - npm i -D @testing-library/jest-dom

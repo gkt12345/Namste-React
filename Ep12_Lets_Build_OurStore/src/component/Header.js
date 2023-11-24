@@ -4,11 +4,14 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import { useState } from "react";
 import Login from "./Login";
 import { useSelector } from "react-redux";
+import UserContext from "../utils/UserContext";
+import { useContext } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   const onlineStatus = useOnlineStatus();
-
+  const { loggedUser } = useContext(UserContext);
   // selector- subscibing to the store
   const cartItems = useSelector((store) => store.cart.items);
   // console.log(cartItems);
@@ -33,9 +36,17 @@ const Header = () => {
             <Link to={"/grocery"}>Grocery</Link>
           </li>
           <li>
-            <button onClick={() => setIsOpen(true)}>Login</button>
+            {isLogin ? (
+              <button onClick={() => setIsOpen(true)}>Login</button>
+            ) : (
+              <button onClick={() => setIsLogin(true)}>Logout</button>
+            )}
+
             {isOpen && (
-              <Login isOpen={isOpen} onClose={() => setIsOpen(false)} />
+              <Login
+                onClose={() => setIsOpen(false)}
+                setLogin={() => setIsLogin(false)}
+              />
             )}
           </li>
           <li>
@@ -49,6 +60,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <div className="text-sm">Hey! {loggedUser} Welcome To Our Store</div>
       </div>
     </div>
   );

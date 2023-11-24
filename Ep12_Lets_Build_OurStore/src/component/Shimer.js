@@ -1,4 +1,4 @@
-import { SHIMER_IMG } from "../utils/pathOfAll";
+import SHIMER_IMG from "../utils/Shimer_IMG.jpg";
 
 const Shimer = () => {
   return (

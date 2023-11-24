@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import UserContext from "../utils/UserContext";
 
-const Login = ({ onClose }) => {
+const Login = ({ onClose, setLogin }) => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,6 +16,7 @@ const Login = ({ onClose }) => {
   const onSubmitHandler = () => {
     name && setUserName(name);
     onClose();
+    setLogin();
   };
   return (
     <div className="w-screen h-screen fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-90">

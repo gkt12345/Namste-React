@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { APP_IMG } from "../utils/pathOfAll";
+import APP_IMG from "../utils/APP_IMG.jpg";
 import UserContext from "../utils/UserContext";
 
 const About = () => {
