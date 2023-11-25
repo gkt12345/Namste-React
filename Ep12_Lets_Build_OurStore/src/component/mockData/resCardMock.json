@@ -1,0 +1,64 @@
+{
+  "id": "546073",
+  "name": "Vadilal Ice Creams",
+  "cloudinaryImageId": "jl3dgzqss2b0pfc6rpaa",
+  "locality": "Rithala",
+  "areaName": "Rohini",
+  "costForTwo": "₹200 for two",
+  "cuisines": ["Ice Cream", "Desserts"],
+  "avgRating": 4.3,
+  "veg": true,
+  "feeDetails": {
+    "restaurantId": "546073",
+    "fees": [
+      {
+        "name": "BASE_DISTANCE",
+        "fee": 6900
+      },
+      {
+        "name": "BASE_TIME"
+      },
+      {
+        "name": "ANCILLARY_SURGE_FEE"
+      }
+    ],
+    "totalFee": 6900
+  },
+  "parentId": "11745",
+  "avgRatingString": "4.3",
+  "totalRatingsString": "100+",
+  "sla": {
+    "deliveryTime": 24,
+    "lastMileTravel": 5.7,
+    "serviceability": "SERVICEABLE",
+    "slaString": "24 mins",
+    "lastMileTravelString": "5.7 km",
+    "iconType": "ICON_TYPE_EMPTY"
+  },
+  "availability": {
+    "nextCloseTime": "2023-11-25 02:30:00",
+    "opened": true
+  },
+  "badges": {},
+  "isOpen": true,
+  "aggregatedDiscountInfoV2": {},
+  "type": "F",
+  "badgesV2": {
+    "entityBadges": {
+      "imageBased": {},
+      "textBased": {},
+      "textExtendedBadges": {}
+    }
+  },
+  "differentiatedUi": {
+    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    "differentiatedUiMediaDetails": {
+      "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+      "lottie": {},
+      "video": {}
+    }
+  },
+  "reviewsSummary": {},
+  "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+  "restaurantOfferPresentationInfo": {}
+}

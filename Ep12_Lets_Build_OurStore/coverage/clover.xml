@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1700843549452" clover="3.2.0">
-  <project timestamp="1700843549452" name="All files">
-    <metrics statements="50" coveredstatements="27" conditionals="8" coveredconditionals="4" methods="22" coveredmethods="8" elements="80" coveredelements="39" complexity="0" loc="50" ncloc="50" packages="3" files="9" classes="9"/>
+<coverage generated="1700934941028" clover="3.2.0">
+  <project timestamp="1700934941029" name="All files">
+    <metrics statements="53" coveredstatements="29" conditionals="10" coveredconditionals="4" methods="23" coveredmethods="8" elements="86" coveredelements="41" complexity="0" loc="53" ncloc="53" packages="3" files="10" classes="10"/>
     <package name="component">
-      <metrics statements="30" coveredstatements="13" conditionals="8" coveredconditionals="4" methods="15" coveredmethods="6"/>
+      <metrics statements="33" coveredstatements="15" conditionals="10" coveredconditionals="4" methods="16" coveredmethods="6"/>
       <file name="Contact.js" path="D:\Namste-React\Ep12_Lets_Build_OurStore\src\component\Contact.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="6" count="3" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
       </file>
       <file name="Header.js" path="D:\Namste-React\Ep12_Lets_Build_OurStore\src\component\Header.js">
-        <metrics statements="11" coveredstatements="8" conditionals="6" coveredconditionals="4" methods="6" coveredmethods="3"/>
+        <metrics statements="11" coveredstatements="7" conditionals="6" coveredconditionals="3" methods="6" coveredmethods="2"/>
         <line num="10" count="1" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
       </file>
       <file name="Login.js" path="D:\Namste-React\Ep12_Lets_Build_OurStore\src\component\Login.js">
         <metrics statements="15" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
@@ -40,6 +40,12 @@
         <line num="21" count="0" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
+      </file>
+      <file name="ResCard.js" path="D:\Namste-React\Ep12_Lets_Build_OurStore\src\component\ResCard.js">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
       <file name="sum.js" path="D:\Namste-React\Ep12_Lets_Build_OurStore\src\component\sum.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -71,21 +77,21 @@
       </file>
       <file name="pathOfAll.js" path="D:\Namste-React\Ep12_Lets_Build_OurStore\src\utils\pathOfAll.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
       </file>
       <file name="useOnlineStatus.js" path="D:\Namste-React\Ep12_Lets_Build_OurStore\src\utils\useOnlineStatus.js">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
       </file>
     </package>
   </project>

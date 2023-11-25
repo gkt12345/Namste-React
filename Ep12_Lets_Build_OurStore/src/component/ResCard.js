@@ -1,9 +1,9 @@
 import React from "react";
 import { resCard_IMG_URL } from "../utils/pathOfAll";
 
-const ResCard = (props) => {
+const ResCard = ({ resInfo }) => {
   const { name, avgRating, cloudinaryImageId, costForTwo, cuisines, sla } =
-    props.resInfo;
+    resInfo;
 
   return (
     <div className="h-80 w-[180px] md:w-[300px] mb-2 md:m-5 p-2 border-2 border-white bg-rose-50 rounded-lg cursor-pointer hover:border-2 hover:w-[300px] hover:shadow-lg hover:border-gray-300">

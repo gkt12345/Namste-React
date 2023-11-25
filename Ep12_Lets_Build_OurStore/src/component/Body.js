@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const Body = () => {
   const [resData, filterList, setFilterList] = useFetchResList();
   const n = 15;
-
   return (
     <div>
       <Search

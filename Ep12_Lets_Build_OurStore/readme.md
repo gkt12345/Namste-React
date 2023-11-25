@@ -104,4 +104,7 @@
   - include @babel/preset-react inside my babel configuration file: `["@babel/preset-react", {runtime: "automatic"}]`
 
 - `Install @testing-library/jest-dom`: to make `toBeTheDocument()` like many functions work.
+
   - npm i -D @testing-library/jest-dom
+
+- `"watch-test": "jest --watch"` : Write this script in your `package.json` it will run your test automaticlly while you save file
