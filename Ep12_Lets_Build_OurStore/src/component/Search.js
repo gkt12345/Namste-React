@@ -6,6 +6,7 @@ const Search = ({ onFilterChange, list }) => {
     <div className="flex justify-center mt-5 mb-5 ">
       <input
         className="w-[40%] mt-1 px-3 py-2 h-10 border shadow-sm border-slate-300  focus:outline-none focus:ring-sky-500 rounded-md focus:ring-1"
+        data-testid="searchInput"
         type="text"
         placeholder="search"
         value={input}

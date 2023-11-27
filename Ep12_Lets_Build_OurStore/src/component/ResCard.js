@@ -6,7 +6,10 @@ const ResCard = ({ resInfo }) => {
     resInfo;
 
   return (
-    <div className="h-80 w-[180px] md:w-[300px] mb-2 md:m-5 p-2 border-2 border-white bg-rose-50 rounded-lg cursor-pointer hover:border-2 hover:w-[300px] hover:shadow-lg hover:border-gray-300">
+    <div
+      className="h-80 w-[180px] md:w-[300px] mb-2 md:m-5 p-2 border-2 border-white bg-rose-50 rounded-lg cursor-pointer hover:border-2 hover:w-[300px] hover:shadow-lg hover:border-gray-300"
+      data-testid="resCard"
+    >
       <div className="h-[65%] overflow-hidden">
         <img
           className="rounded-md h-[100%] w-[100%]"
@@ -15,7 +18,7 @@ const ResCard = ({ resInfo }) => {
         />
       </div>
       <div className="flex justify-between mt-3 h-7 overflow-hidden">
-        <div className="text-md font-bold w-[70%] ">{name}</div>
+        <div className="text-md font-bold w-[70%]">{name}</div>
         {avgRating > 4 ? (
           <div className="bg-green-950 text-white rounded-md w-12 text-sm font-bold text-center pt-[2px]">
             {avgRating}*

@@ -14,7 +14,7 @@ const Body = () => {
         list={resData}
       />
       <div className="flex flex-wrap justify-center">
-        {filterList.length
+        {filterList
           ? filterList?.map((res) => (
               <Link to={"/restaurant/" + res.info.id} key={res.info.id}>
                 <ResCard resInfo={res.info} />

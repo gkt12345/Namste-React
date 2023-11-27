@@ -107,4 +107,4 @@
 
   - npm i -D @testing-library/jest-dom
 
-- `"watch-test": "jest --watch"` : Write this script in your `package.json` it will run your test automaticlly while you save file
+- `"watch-test": "jest --watch"` : Write this script in your `package.json` and `npm run watch-test` in terminal, it will run your test automaticlly while you save file
