@@ -26,9 +26,9 @@ const ButtonList = () => {
     "Node",
   ];
   return (
-    <div className="flex flex-wrap ml-5 mb-4 overflow-hidden h-8">
-      {buttonListName.map((btnName) => (
-        <Button btnName={btnName} />
+    <div className="flex flex-wrap ml-5 mb-4 overflow-hidden  h-8">
+      {buttonListName.map((btnName, id) => (
+        <Button btnName={btnName} key={id} />
       ))}
     </div>
   );

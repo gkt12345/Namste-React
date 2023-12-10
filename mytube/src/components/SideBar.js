@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
@@ -7,14 +8,16 @@ const SideBar = () => {
   if (!isMenuOpen) return null;
   return (
     <div className="text-sm">
-      <div className="flex mb-1 bg-slate-50 h-8 w-[130px] px-2 py-1 rounded-lg cursor-pointer hover:bg-gray-300">
-        <img
-          className="h-5"
-          alt="homeIcon"
-          src="https://icons.veryicon.com/png/o/miscellaneous/advanceico/home-275.png"
-        />
-        <span className="ml-5 mr-6 font-medium text-gray-600">Home</span>
-      </div>
+      <Link to={"/"}>
+        <div className="flex mb-1 bg-slate-50 h-8 w-[130px] px-2 py-1 rounded-lg cursor-pointer hover:bg-gray-300">
+          <img
+            className="h-5"
+            alt="homeIcon"
+            src="https://icons.veryicon.com/png/o/miscellaneous/advanceico/home-275.png"
+          />
+          <span className="ml-5 mr-6 font-medium text-gray-600">Home</span>
+        </div>{" "}
+      </Link>
       <div className="flex mb-1 bg-slate-50 h-8 px-2 py-1 rounded-lg cursor-pointer hover:bg-gray-300">
         <img
           className="h-5"
