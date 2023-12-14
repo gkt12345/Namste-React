@@ -1,28 +1,42 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import { YOUTUBE_AUTOCOMPLITE_API } from "../utils/constants";
+import { cacheResults } from "../utils/searchSlice";
 
 const Head = () => {
-  const [search, setSearch] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const [autoSuggesation, setAutoSuggesation] = useState([]);
   const [showAutoSuggestion, setShowAutoSuggesation] = useState(false);
   const dispatch = useDispatch();
-  const toggleMenuHandler = () => {
-    dispatch(toggleMenu());
-  };
+  const searchCache = useSelector((store) => store.search);
 
   useEffect(() => {
-    const timer = setTimeout(() => fetchYoutubeAutoCompleteApi(), 300);
+    const timer = setTimeout(() => {
+      if (searchCache[searchQuery]) {
+        setAutoSuggesation(searchCache[searchQuery]);
+      } else {
+        fetchYoutubeAutoCompleteApi();
+      }
+    }, 300);
     return () => clearTimeout(timer);
-  }, [search]);
+  }, [searchQuery]);
 
   const fetchYoutubeAutoCompleteApi = async () => {
-    console.log(search);
-    const data = await fetch(YOUTUBE_AUTOCOMPLITE_API + search);
+    // console.log(searchQuery);
+    const data = await fetch(YOUTUBE_AUTOCOMPLITE_API + searchQuery);
     const json = await data.json();
-    console.log(json[1]);
+    // console.log(json[1]);
     setAutoSuggesation(json[1]);
+    dispatch(
+      cacheResults({
+        [searchQuery]: json[1],
+      })
+    );
+  };
+
+  const toggleMenuHandler = () => {
+    dispatch(toggleMenu());
   };
 
   return (
@@ -46,8 +60,8 @@ const Head = () => {
           <input
             type="text"
             className="w-[80%] py-1 px-5 border rounded-l-full outline-none font-md text-gray-500"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             onFocus={() => setShowAutoSuggesation(true)}
             onBlur={() => setShowAutoSuggesation(false)}
           />
