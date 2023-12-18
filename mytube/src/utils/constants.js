@@ -6,3 +6,5 @@ export const YOUTUBE_API =
 
 export const YOUTUBE_AUTOCOMPLITE_API =
   "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+
+export const OFF_SET_COUNT = 30;
